@@ -77,13 +77,13 @@ def jogar():
 
             # Verificar vitória
             if verificar_vitoria(tabuleiro, jogador_atual):
-                print(f"🎉 Jogador {jogador_atual} venceu!")
+                print(f"Jogador {jogador_atual} venceu!")
                 vencedor = jogador_atual
                 break
 
             # Verificar empate
             if tabuleiro_cheio(tabuleiro):
-                print("⚖️ Empate!")
+                print("Empate!")
                 break
 
             # Trocar jogador
@@ -97,7 +97,7 @@ def jogar():
             placar["Empates"] += 1
 
         # Mostrar placar
-        print("\n📊 Placar:")
+        print("\n Placar:")
         print(f"Partidas: {placar['Partidas']}")
         print(f"Vitórias X: {placar['X']}")
         print(f"Vitórias O: {placar['O']}")
@@ -106,7 +106,7 @@ def jogar():
         # Perguntar se querem jogar novamente
         jogar_novamente = input("\nDesejam jogar novamente? (s/n): ").lower()
         if jogar_novamente != "s":
-            print("👋 Obrigado por jogar!")
+            print("Obrigado por jogar!")
             break
 
 
